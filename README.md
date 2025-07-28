@@ -1,70 +1,129 @@
-# Getting Started with Create React App
+# 🌍 Travel Advisor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicação web feita com React, integrando múltiplas APIs para fornecer recomendações de restaurantes, hotéis e pontos turísticos em tempo real.
 
-## Available Scripts
+## 📋 Sobre o Projeto
 
-In the project directory, you can run:
+O Travel Advisor é uma aplicação web moderna que utiliza múltiplas APIs para fornecer aos utilizadores informações em tempo real sobre destinos de viagem, incluindo restaurantes, hotéis e pontos turísticos. Com uma interface intuitiva e mapas interativos, a aplicação torna o planeamento de viagens mais eficiente e informativo.
+
+## 🚀 Tecnologias Utilizadas
+
+- **React** (v19.1.0) - Biblioteca JavaScript para construção de interfaces
+- **Material UI** - Framework de componentes para design moderno e responsivo
+- **Google Maps API** - Integração de mapas interativos
+- **RapidAPI** - Integração com TripAdvisor, OpenWeather e outras APIs
+- **Axios** - Cliente HTTP para requisições à API
+- **Create React App** - Ferramenta de desenvolvimento e build
+- **JavaScript ES6+** - Funcionalidades modernas do JavaScript
+
+## 📸 Funcionalidades
+
+- 🔍 **Busca por Localização**: Pesquise qualquer localização no mundo
+- �️ **Visualização em Mapa Interativo**: Explore destinos através do Google Maps
+- 🏨 **Listagem de Hotéis**: Encontre acomodações com avaliações e preços
+- 🍽️ **Restaurantes**: Descubra os melhores restaurantes da região
+- 🎯 **Atrações Turísticas**: Explore pontos turísticos e atividades
+- ⭐ **Filtros de Avaliação e Tipo**: Filtre resultados por categoria e classificação
+- 📱 **Design Responsivo**: Interface otimizada para desktop e mobile
+- ⚡ **Informações em Tempo Real**: Dados atualizados através de APIs externas
+
+## 🧪 Como Executar Localmente
+
+### Pré-requisitos
+
+- Node.js (versão 14 ou superior)
+- npm ou yarn
+- Chaves de API (Google Maps, RapidAPI)
+
+### Instalação
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/CesaltinoFelix/travel-advisor.git
+cd travel-advisor
+```
+
+2. Instale as dependências:
+```bash
+npm install
+```
+
+3. Configure as variáveis de ambiente:
+   - Crie um arquivo `.env` na raiz do projeto
+   - Adicione suas chaves de API:
+```env
+REACT_APP_GOOGLE_MAPS_API_KEY=sua_chave_google_maps
+REACT_APP_RAPIDAPI_KEY=sua_chave_rapidapi
+```
+
+4. Execute o projeto em modo de desenvolvimento:
+```bash
+npm start
+```
+
+5. Abra [http://localhost:3000](http://localhost:3000) no seu navegador
+
+## 📁 Estrutura do Projeto
+
+```
+travel-advisor/
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── src/
+│   ├── components/
+│   │   ├── Header/          # Componente de cabeçalho e pesquisa
+│   │   ├── List/           # Lista de lugares e resultados
+│   │   ├── Map/            # Componente do mapa interativo
+│   │   └── PlaceDetails/   # Detalhes de lugares específicos
+│   ├── App.jsx             # Componente principal da aplicação
+│   ├── App.css             # Estilos globais
+│   ├── index.js            # Ponto de entrada da aplicação
+│   └── index.css           # Estilos base
+├── package.json
+└── README.md
+```
+
+## 🔧 Scripts Disponíveis
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Executa a aplicação em modo de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) para visualizar no navegador.
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Executa os testes em modo interativo.
 
 ### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Constrói a aplicação para produção na pasta `build`.\
+Optimiza a aplicação para melhor performance.
 
 ### `npm run eject`
+**Nota: esta é uma operação irreversível!**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Remove a dependência de build única do projeto, copiando todos os ficheiros de configuração.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🤝 Como Contribuir
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Faça um fork do projeto
+2. Crie uma branch para sua funcionalidade (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📝 Licença
 
-## Learn More
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 👨‍💻 Autor
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Desenvolvido com ❤️ por [Cesaltino Felix](https://github.com/CesaltinoFelix)
 
-### Code Splitting
+## 🔗 Links Úteis
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Documentação do React](https://reactjs.org/)
+- [Material-UI Documentation](https://mui.com/)
+- [Google Maps API](https://developers.google.com/maps)
+- [RapidAPI](https://rapidapi.com/)
+- [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started)
